@@ -79,12 +79,8 @@ WSGI_APPLICATION = 'travel.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'inmakes_travel_projects',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',  # or the host where your MySQL server is running
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
